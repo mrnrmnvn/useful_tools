@@ -1,4 +1,4 @@
-def numeral2int(textnum, numwords={}):
+def ordinal2int(textnum, numwords={}):
     save_textnum = textnum
     textnum = textnum.replace('ё', 'е')
     units = [
