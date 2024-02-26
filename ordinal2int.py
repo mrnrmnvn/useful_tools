@@ -1,4 +1,6 @@
-def ordinal2int(textnum, gender, numwords={}):
+from typing import Literal
+
+def ordinal2int(textnum, gender:Literal['masc','femn']='masc', numwords={}):
     save_textnum = textnum
     textnum = textnum.replace('ё', 'е')
     if gender == 'femn':
